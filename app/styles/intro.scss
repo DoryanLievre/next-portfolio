@@ -1,16 +1,18 @@
-section#intro{
+section#intro {
   max-width: 70%;
   margin: 0 auto;
   display: flex;
   align-items: center;
-    justify-content: space-between;
+  justify-content: space-between;
 }
-section#intro p{
+section#intro p {
   font-size: 1.8rem;
   font-weight: bold;
   line-height: 2.6rem;
   opacity: 0;
-  transition: opacity .3s linear, top .3s linear;
+  transition:
+    opacity 0.3s linear,
+    top 0.3s linear;
   position: relative;
   top: -50px;
 }
@@ -28,7 +30,9 @@ section#intro a {
   display: inline-block;
   margin-top: 20px;
   opacity: 0;
-  transition: opacity .3s linear, transform .3s ease-in-out; /* Ajoutez une transition à la transformation */
+  transition:
+    opacity 0.3s linear,
+    transform 0.3s ease-in-out; /* Ajoutez une transition à la transformation */
   position: relative;
   bottom: -50px;
 }
@@ -40,10 +44,10 @@ section#intro.visible a {
 
 section#intro a:hover {
   background-color: $gold;
-  color: #34353A;
+  color: #34353a;
   transform: translateY(-5px);
 }
-section#intro span{
+section#intro span {
   color: $gold;
   font-size: 3.2rem;
   font-family: 'Young Serif', serif;
@@ -57,18 +61,18 @@ section#intro img {
   margin-right: 20px;
   object-fit: cover;
   opacity: 0;
-  transition: opacity .5s linear, transform .5s ease-in-out;
+  transition:
+    opacity 0.5s linear,
+    transform 0.5s ease-in-out;
   transform: perspective(1000px) rotateY(0deg);
 }
 
 section#intro img:hover {
   opacity: 1;
   transform: perspective(1000px) rotateY(10deg);
-  transition: transform .5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 section#intro.visible img {
   opacity: 1;
 }
-
-

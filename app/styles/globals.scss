@@ -1,28 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Young+Serif&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: #34353A;
-    font-family: 'Roboto', sans-serif;
-    Color: #fff;
+body {
+  background-color: #34353a;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
 }
-.center{
-    max-width: 70%;
-    margin: 0 auto;
+.center {
+  max-width: 70%;
+  margin: 0 auto;
 }
-img{
-    max-width: 100%;
+img {
+  max-width: 100%;
 }
-h2{
-    font-family: 'Young Serif', serif;
-    font-size: 3rem;
-    font-weight: 600;
-    margin-bottom: 20px;
+h2 {
+  font-family: 'Young Serif', serif;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
-$gold: #FAC86B;
-$gray: #31333B;
+$gold: #fac86b;
+$gray: #31333b;

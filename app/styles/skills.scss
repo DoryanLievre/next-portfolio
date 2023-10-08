@@ -13,33 +13,39 @@ section#skills h2 {
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
-.skill-card{
+.skill-card {
   opacity: 0;
   transition: all 0.5s linear;
   display: flex;
   flex-direction: column;
   place-items: center;
-  background-color: #3D3E42;
+  background-color: #3d3e42;
   padding: 40px;
   text-align: center;
   border-radius: 10px;
   position: relative;
   left: -20px;
 }
-.skills-container.is-visible .skill-card{
+.skills-container.is-visible .skill-card {
   opacity: 1;
   left: 0;
 }
-.skill-card:nth-child(2){transition-delay: .2s};
-.skill-card:nth-child(3){transition-delay: .4s};
-.skill-card:nth-child(4){transition-delay: .6s};
-@for $indexOfCard from 1 through 8{
+.skill-card:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.skill-card:nth-child(3) {
+  transition-delay: 0.4s;
+}
+.skill-card:nth-child(4) {
+  transition-delay: 0.6s;
+}
+@for $indexOfCard from 1 through 8 {
   .skill-card:nth-child(#{$indexOfCard}) {
-    transition-delay: $indexOfCard * .1s;
+    transition-delay: $indexOfCard * 0.1s;
   }
 }
 
-.skill-card img{
+.skill-card img {
   display: inline-block;
   margin-bottom: 30px;
   max-width: 60px;
