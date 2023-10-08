@@ -9,6 +9,7 @@ export default function Home() {
     <main>
        <Header />
         <Intro />
+        <About />
     </main>
   )
 }
