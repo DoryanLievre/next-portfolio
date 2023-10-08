@@ -1,14 +1,14 @@
 section#intro {
   max-width: 70%;
-  margin: 0 auto;
+  min-height: 100vh;
+  margin: 25vh auto 0;
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 section#intro p {
-  font-size: 1.8rem;
+  font-size: calc(1rem + 1vw);
   font-weight: bold;
-  line-height: 2.6rem;
+  line-height: 1.5;
   opacity: 0;
   transition:
     opacity 0.3s linear,
@@ -21,7 +21,7 @@ section#intro.visible p {
   top: 0px;
 }
 
-section#intro a {
+section#intro .contact-link {
   border: 3px solid $gold;
   border-radius: 7px;
   color: $gold;
@@ -30,26 +30,26 @@ section#intro a {
   display: inline-block;
   margin-top: 20px;
   opacity: 0;
+  transform: translateY(50px);
   transition:
     opacity 0.3s linear,
-    transform 0.3s ease-in-out; /* Ajoutez une transition à la transformation */
+    transform 0.3s ease-in-out;
   position: relative;
-  bottom: -50px;
 }
 
-section#intro.visible a {
+section#intro.visible .contact-link {
   opacity: 1;
-  bottom: 0px;
+  transform: translateY(0px);
 }
 
-section#intro a:hover {
+section#intro .contact-link:hover {
   background-color: $gold;
   color: #34353a;
   transform: translateY(-5px);
 }
 section#intro span {
   color: $gold;
-  font-size: 3.2rem;
+  font-size: calc(1.8rem + 2vw);
   font-family: 'Young Serif', serif;
   font-weight: 600;
 }
@@ -68,11 +68,55 @@ section#intro img {
 }
 
 section#intro img:hover {
+  cursor: pointer;
   opacity: 1;
-  transform: perspective(1000px) rotateY(10deg);
+  transform: perspective(1000px) rotateY(20deg);
   transition: transform 0.5s ease-in-out;
 }
 
-section#intro.visible img {
+section#intro.visible img,
+section#intro.visible .bubble {
+  opacity: 1;
+}
+
+section#intro .images-container {
+  position: relative;
+}
+section#intro .bubble {
+  p {
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+  max-width: 300px;
+  position: absolute;
+  top: 29%;
+  left: 83%;
+  transform: translateX(0);
+  background: $gold;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition:
+    opacity 0.5s linear,
+    transform 0.5s ease-in-out;
+}
+
+section#intro .bubble::before {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  margin-left: -80px;
+  border-style: solid;
+  border-width: 20px 10px 0;
+  border-color: $gold transparent transparent transparent;
+}
+
+section#intro.visible .bubble {
+  transform: translateX(-50%);
   opacity: 1;
 }

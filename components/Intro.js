@@ -17,13 +17,28 @@ export default function Intro() {
           Full-stack javascript developer,
           <br /> curious and code lover.
         </p>
-        <a href="">Contact me</a>
+        <a href="#Contact" className="contact-link">
+          Contact me
+        </a>
       </div>
-      <div>
-        <img
-          src="images/me_grayscale.png"
-          alt="Profil picture of me (Doryan Lièvre)"
-        />
+      <div className="image-container">
+        <a
+          className="cv-link"
+          href="documents/Doryan_Lievre_CV.pdf"
+          download="Doryan_Lievre_CV.pdf"
+        >
+          <img
+            src="images/me_grayscale.png"
+            alt="Profil picture of me (Doryan Lièvre)"
+          />
+        </a>
+
+        <div className="bubble">
+          <p>
+            Want to see my resume?
+            <br /> Click on me!
+          </p>
+        </div>
       </div>
     </section>
   )
