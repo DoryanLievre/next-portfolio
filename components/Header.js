@@ -1,7 +1,7 @@
 export default function Header() {
   return (
     <header>
-      <img className="headerLogo" src="img/personal_logo.svg" alt="logo" />
+      <img className="headerLogo" src="images/personal_logo.svg" alt="logo" />
       <nav>
         <a href="">About</a>
         <a href="">Portfolio</a>
