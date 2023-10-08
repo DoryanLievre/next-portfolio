@@ -21,7 +21,7 @@ export default function Intro() {
       </div>
       <div>
         <img
-          src="img/me_grayscale.png"
+          src="images/me_grayscale.png"
           alt="Profil picture of me (Doryan Lièvre)"
         />
       </div>

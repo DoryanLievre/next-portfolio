@@ -9,35 +9,35 @@ export default function Skills() {
         <h2>My Skills</h2>
         <div className={skillsShow + 'skills-container'}>
           <div className="skill-card">
-            <img src="/img/js.png" alt="" />
+            <img src="/images/js.png" alt="" />
             <span>Javascript</span>
           </div>
           <div className="skill-card">
-            <img src="/img/html-5.png" alt="" />
+            <img src="/images/html-5.png" alt="" />
             <span>HTML</span>
           </div>
           <div className="skill-card">
-            <img src="/img/css-3.png" alt="" />
+            <img src="/images/css-3.png" alt="" />
             <span>CSS</span>
           </div>
           <div className="skill-card">
-            <img src="/img/git.svg" alt="" />
+            <img src="/images/git.svg" alt="" />
             <span>Git</span>
           </div>
           <div className="skill-card">
-            <img src="/img/react.png" alt="" />
+            <img src="/images/react.png" alt="" />
             <span>React</span>
           </div>
           <div className="skill-card">
-            <img src="/img/nodejs.svg" alt="" />
+            <img src="/images/nodejs.svg" alt="" />
             <span>Node Js</span>
           </div>
           <div className="skill-card">
-            <img src="/img/php.png" alt="" />
+            <img src="/images/php.png" alt="" />
             <span>Php</span>
           </div>
           <div className="skill-card">
-            <img src="/img/mongodb.png" alt="" />
+            <img src="/images/mongodb.png" alt="" />
             <span>Mongo db</span>
           </div>
         </div>
