@@ -4,6 +4,7 @@ import Header from '@/components/Header'
 import Intro from '@/components/Intro'
 import About from '@/components/About'
 import Skills from '@/components/Skills'
+import Portfolio from '@/components/Portfolio'
 import { useEffect } from 'react'
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
       <Intro />
       <About />
       <Skills />
+      <Portfolio />
     </main>
   )
 }
