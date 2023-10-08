@@ -12,7 +12,7 @@ export default function Intro() {
     return (
         <section id="intro" className={classes}>
             <div>
-                <p>I'm <span>Doryan Lièvre</span><br/>Full-stack javascript developer,<br/> curious and code lover.</p>
+                <p>I&apos;m <span>Doryan Lièvre</span><br/>Full-stack javascript developer,<br/> curious and code lover.</p>
                 <a href="">Contact me</a>
             </div>
             <div>
