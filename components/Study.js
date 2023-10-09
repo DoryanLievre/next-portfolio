@@ -2,7 +2,7 @@ export default function study () {
     return (
         <section id="study">
             <div className="center">
-                <h2>Formation</h2>
+                <h2>Study</h2>
                 <div className="study-timeline">
                     <div className="study-item">
                         <div className='study-date'><span className='study-year'>2023</span><span className='study-arrow'></span></div>
