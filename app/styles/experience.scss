@@ -5,8 +5,8 @@ section#experience{
     top:-38px;
   }
 
-  .timeline {
-    .item {
+  .job-timeline {
+    .job-item {
       display: flex;
       opacity: 0;
       transition: all 0.3s ease-in-out;
@@ -17,17 +17,17 @@ section#experience{
           transition-delay: $indexOfCard * .3s;
         }
       }
-      .date {
+      .job-date {
         display: flex;
         padding-right: 15px;
-        span.year{
+        span.job-year{
           background-color: #5C5D61;
           padding: 0 10px;
           height: 30px;
           display: inline-block;
           line-height: 30px;
           }
-        span.arrow{
+        span.job-arrow{
           display: inline-block;
           width: 0;
           height: 0;
@@ -37,17 +37,17 @@ section#experience{
         }
       }
 
-      .separator{
+      .job-separator{
         display: flex;
         flex-direction: column;
-        .dot{
+        .job-dot{
           width: 30px;
           height: 30px;
           background-color: $gold;
           border-radius: 50%;
           box-shadow: 0 0 20px $gold;
         }
-        .line{
+        .job-line{
           min-height: 10px;
           width: 2px;
           background-color: white;
@@ -85,20 +85,20 @@ section#experience{
   }
 }
 
-section#experience.is-visible div.timeline div.item{
+section#experience.is-visible div.job-timeline div.job-item{
  opacity: 1;
  top: 0;
 }
 
-section#experience div.timeline div.item{
+section#experience div.job-timeline div.job-item{
   @for $indexOfCard from 1 through 2  {
     &:nth-child(#{$indexOfCard}) {
-      .line {
+      .job-line {
         transition-delay: $indexOfCard * .4s;
       }
     }
   }
 }
-section#experience.is-visible div.timeline div.item .line{
+section#experience.is-visible div.job-timeline div.job-item .job-line{
   max-height: 200px;
 }

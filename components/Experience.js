@@ -3,12 +3,12 @@ export default function Experience() {
         <section id="experience">
             <div className="center">
                 <h2>Experience</h2>
-                <div className="timeline">
-                    <div className="item">
-                        <div className='date'><span className='year'>2023</span><span className='arrow'></span></div>
-                        <div className="separator">
-                            <div className="dot"></div>
-                            <div className="line"></div>
+                <div className="job-timeline">
+                    <div className="job-item">
+                        <div className='job-date'><span className='job-year'>2023</span><span className='job-arrow'></span></div>
+                        <div className="job-separator">
+                            <div className="job-dot"></div>
+                            <div className="job-line"></div>
                         </div>
                         <div className="job-infos">
                             <h3>Web Developer </h3>
