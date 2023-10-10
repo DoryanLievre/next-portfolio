@@ -7,6 +7,7 @@ import Skills from '@/components/Skills'
 import Portfolio from '@/components/Portfolio'
 import Experience from "@/components/Experience";
 import Study from "@/components/Study";
+import Contact from '@/components/Contact';
 import { useEffect } from 'react'
 
 export default function Home() {
@@ -30,6 +31,7 @@ export default function Home() {
       <Portfolio />
       <Experience />
       <Study />
+      <Contact />
     </main>
   )
 }

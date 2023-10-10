@@ -1,0 +1,31 @@
+section#contact {
+  border-top: 2px solid $gold;
+  margin-top: 50px;
+  text-align: center;
+  h2{
+    position: relative;
+    top: -37px;
+    background-color: #3d3e42;
+    display: inline-block;
+    padding: 0 50px;
+  }
+  div.box {
+    background-color: #31333b;
+    display: inline-flex;
+    align-items: center;
+    width: 280px;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    justify-content: center;
+    svg{
+      height: 30px;
+      fill: white;
+      margin-right: 20px;
+    }
+    a{
+      color: $gold;
+      text-decoration: none;
+    }
+  }
+}
