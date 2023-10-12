@@ -5,9 +5,10 @@ import Intro from '@/components/Intro'
 import About from '@/components/About'
 import Skills from '@/components/Skills'
 import Portfolio from '@/components/Portfolio'
-import Experience from "@/components/Experience";
-import Study from "@/components/Study";
-import Contact from '@/components/Contact';
+import Experience from '@/components/Experience'
+import Study from '@/components/Study'
+import Contact from '@/components/Contact'
+import Footer from '@/components/Footer'
 import { useEffect } from 'react'
 
 export default function Home() {
@@ -32,6 +33,7 @@ export default function Home() {
       <Experience />
       <Study />
       <Contact />
+      <Footer />
     </main>
   )
 }
