@@ -39,9 +39,9 @@ export default function Intro() {
             <br /> Click on me!
           </p>
         </div>
-        <div className="srolling-mouse">
-          <div className="wheel"></div>
-        </div>
+      </div>
+      <div className="scrolling-mouse">
+        <div className="wheel"></div>
       </div>
     </section>
   )

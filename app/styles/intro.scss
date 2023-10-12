@@ -120,3 +120,38 @@ section#intro.visible .bubble {
   transform: translateX(-50%);
   opacity: 1;
 }
+
+section#intro .scrolling-mouse{
+  width: 3.2em;
+  height: 5em;
+  border: .3em solid $gold;
+  border-radius: 2em;
+  position: absolute;
+  left: 50%;
+  bottom: 14%;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+section#intro .scrolling-mouse .wheel {
+  width: .8em;
+  height: 1em;
+  background-color: $gold;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(0%, -50%);
+  border-radius: .6em;
+  animation: wheel 1.4s ease-in-out infinite;
+}
+
+@keyframes wheel {
+  0% {
+    transform: translate(-50%,0%) ;
+    opacity: 0;
+  }
+  20%,70% {
+    opacity: 1;
+  }
+  90%,100% {
+    transform: translate(-50%, 150%);
+  }
+}
