@@ -15,7 +15,7 @@ export default function study() {
             </div>
             <div className="study-infos">
               <h3>Web application developer designer</h3>
-              <h4>O'clock School</h4>
+              <h4>O&apos;clock School</h4>
               <p>This is where I specialized in React development</p>
             </div>
           </div>
@@ -66,7 +66,7 @@ export default function study() {
             </div>
             <div className="study-infos">
               <h3>
-                1st year of Bachelor's degree in computer science and
+                1st year of Bachelor&apos;s degree in computer science and
                 electronics
               </h3>
               <h4>Rennes University</h4>
