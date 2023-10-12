@@ -8,10 +8,10 @@ export default function Portfolio() {
             <img src="/images/placeholder-image.jpg" alt="" />
             <span>Projet 1</span>
             <ul>
-                <li>HTML & CSS</li>
-                <li>React</li>
-                <li>Node JS</li>
-                <li>Mongo db</li>
+              <li>HTML & CSS</li>
+              <li>React</li>
+              <li>Node JS</li>
+              <li>Mongo db</li>
             </ul>
           </a>
           <a href="">

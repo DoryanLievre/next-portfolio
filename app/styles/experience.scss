@@ -1,9 +1,9 @@
-section#experience{
+section#experience {
   padding-bottom: 100px;
 
-  h2{
+  h2 {
     position: relative;
-    top:-38px;
+    top: -38px;
   }
 
   .job-timeline {
@@ -13,42 +13,42 @@ section#experience{
       transition: all 0.3s ease-in-out;
       position: relative;
       top: -50px;
-      @for $indexOfCard from 1 through 2  {
+      @for $indexOfCard from 1 through 2 {
         &:nth-child(#{$indexOfCard}) {
-          transition-delay: $indexOfCard * .3s;
+          transition-delay: $indexOfCard * 0.3s;
         }
       }
       .job-date {
         display: flex;
         padding-right: 15px;
-        span.job-year{
-          background-color: #5C5D61;
+        span.job-year {
+          background-color: #5c5d61;
           padding: 0 10px;
           height: 30px;
           display: inline-block;
           line-height: 30px;
-          }
-        span.job-arrow{
+        }
+        span.job-arrow {
           display: inline-block;
           width: 0;
           height: 0;
           border-style: solid;
           border-width: 15px 0 16px 10px;
-          border-color: transparent transparent transparent #5C5D61;
+          border-color: transparent transparent transparent #5c5d61;
         }
       }
 
-      .job-separator{
+      .job-separator {
         display: flex;
         flex-direction: column;
-        .job-dot{
+        .job-dot {
           width: 30px;
           height: 30px;
           background-color: $gold;
           border-radius: 50%;
           box-shadow: 0 0 20px $gold;
         }
-        .job-line{
+        .job-line {
           min-height: 10px;
           width: 2px;
           background-color: white;
@@ -61,23 +61,23 @@ section#experience{
         }
       }
 
-      .job-infos{
+      .job-infos {
         padding-left: 30px;
         padding-bottom: 30px;
-        h3{
+        h3 {
           font-size: 1.7rem;
           font-weight: 600;
         }
-        h4{
+        h4 {
           margin-top: 6px;
           margin-bottom: 6px;
           font-size: 1.4rem;
         }
-        p{
+        p {
           color: rgb(255, 255, 255, 0.55);
           line-height: 1.3rem;
           margin-top: 10px;
-          span{
+          span {
             color: $gold;
           }
         }
@@ -86,20 +86,20 @@ section#experience{
   }
 }
 
-section#experience.is-visible div.job-timeline div.job-item{
- opacity: 1;
- top: 0;
+section#experience.is-visible div.job-timeline div.job-item {
+  opacity: 1;
+  top: 0;
 }
 
-section#experience div.job-timeline div.job-item{
-  @for $indexOfCard from 1 through 2  {
+section#experience div.job-timeline div.job-item {
+  @for $indexOfCard from 1 through 2 {
     &:nth-child(#{$indexOfCard}) {
       .job-line {
-        transition-delay: $indexOfCard * .4s;
+        transition-delay: $indexOfCard * 0.4s;
       }
     }
   }
 }
-section#experience.is-visible div.job-timeline div.job-item .job-line{
+section#experience.is-visible div.job-timeline div.job-item .job-line {
   max-height: 200px;
 }

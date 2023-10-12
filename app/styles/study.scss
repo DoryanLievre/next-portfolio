@@ -1,9 +1,9 @@
-section#study{
+section#study {
   padding-bottom: 100px;
 
-  h2{
+  h2 {
     position: relative;
-    top:-38px;
+    top: -38px;
   }
 
   .study-timeline {
@@ -13,42 +13,42 @@ section#study{
       transition: all 0.3s ease-in-out;
       position: relative;
       top: -50px;
-      @for $indexOfCard from 1 through 5  {
+      @for $indexOfCard from 1 through 5 {
         &:nth-child(#{$indexOfCard}) {
-          transition-delay: $indexOfCard * .3s;
+          transition-delay: $indexOfCard * 0.2s;
         }
       }
       .study-date {
         display: flex;
         padding-right: 15px;
-        span.study-year{
-          background-color: #5C5D61;
+        span.study-year {
+          background-color: #5c5d61;
           padding: 0 10px;
           height: 30px;
           display: inline-block;
           line-height: 30px;
         }
-        span.study-arrow{
+        span.study-arrow {
           display: inline-block;
           width: 0;
           height: 0;
           border-style: solid;
           border-width: 15px 0 16px 10px;
-          border-color: transparent transparent transparent #5C5D61;
+          border-color: transparent transparent transparent #5c5d61;
         }
       }
 
-      .study-separator{
+      .study-separator {
         display: flex;
         flex-direction: column;
-        .study-dot{
+        .study-dot {
           width: 30px;
           height: 30px;
           background-color: $gold;
           border-radius: 50%;
           box-shadow: 0 0 20px $gold;
         }
-        .study-line{
+        .study-line {
           min-height: 10px;
           width: 2px;
           background-color: white;
@@ -61,23 +61,23 @@ section#study{
         }
       }
 
-      .study-infos{
+      .study-infos {
         padding-left: 30px;
         padding-bottom: 30px;
-        h3{
+        h3 {
           font-size: 1.7rem;
           font-weight: 600;
         }
-        h4{
+        h4 {
           margin-top: 6px;
           margin-bottom: 6px;
           font-size: 1.4rem;
         }
-        p{
+        p {
           color: rgb(255, 255, 255, 0.55);
           line-height: 1.3rem;
           margin-top: 10px;
-          span{
+          span {
             color: $gold;
           }
         }
@@ -86,20 +86,20 @@ section#study{
   }
 }
 
-section#study.is-visible div.study-timeline div.study-item{
+section#study.is-visible div.study-timeline div.study-item {
   opacity: 1;
   top: 0;
 }
 
-section#study div.study-timeline div.study-item{
-  @for $indexOfCard from 1 through 2  {
+section#study div.study-timeline div.study-item {
+  @for $indexOfCard from 1 through 2 {
     &:nth-child(#{$indexOfCard}) {
       .study-line {
-        transition-delay: $indexOfCard * .4s;
+        transition-delay: $indexOfCard * 0.4s;
       }
     }
   }
 }
-section#study.is-visible div.study-timeline div.study-item .study-line{
+section#study.is-visible div.study-timeline div.study-item .study-line {
   max-height: 200px;
 }
