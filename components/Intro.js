@@ -17,7 +17,7 @@ export default function Intro() {
           Full-stack javascript developer,
           <br /> curious and code lover.
         </p>
-        <a href="#Contact" className="contact-link">
+        <a href="#contact" className="contact-link">
           Contact me
         </a>
       </div>
@@ -38,6 +38,9 @@ export default function Intro() {
             Want to see my resume?
             <br /> Click on me!
           </p>
+        </div>
+        <div className="srolling-mouse">
+          <div className="wheel"></div>
         </div>
       </div>
     </section>
