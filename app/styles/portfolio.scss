@@ -124,3 +124,11 @@ section#portfolio.is-visible .portfolio-container a {
   opacity: 1;
   left: 0;
 }
+@media (max-width: 768px) {
+  .portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    gap: 30px;
+  }
+}

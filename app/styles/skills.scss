@@ -50,3 +50,12 @@ section#skills h2 {
   margin-bottom: 30px;
   max-width: 60px;
 }
+
+@media (max-width: 768px) {
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    gap: 30px;
+  }
+}
