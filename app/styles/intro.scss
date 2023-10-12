@@ -130,6 +130,8 @@ section#intro .scrolling-mouse{
   left: 50%;
   bottom: 14%;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.5s linear;
 }
 section#intro .scrolling-mouse .wheel {
   width: .8em;
@@ -141,6 +143,9 @@ section#intro .scrolling-mouse .wheel {
   transform: translate(0%, -50%);
   border-radius: .6em;
   animation: wheel 1.4s ease-in-out infinite;
+}
+section#intro.visible .scrolling-mouse {
+  opacity: 1;
 }
 
 @keyframes wheel {
