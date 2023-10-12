@@ -3,9 +3,9 @@ export default function Header() {
     <header>
       <img className="headerLogo" src="images/personal_logo.svg" alt="logo" />
       <nav>
-        <a href="">About</a>
-        <a href="">Portfolio</a>
-        <a href="">Contact</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
       </nav>
       <div className="social">
         <a href="https://www.linkedin.com/in/doryan-li%C3%A8vre/">
