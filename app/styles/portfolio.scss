@@ -41,9 +41,21 @@ section#portfolio h2 {
       opacity: 0;
       text-align: center;
     }
+    p{
+      position: absolute;
+      top: 10%;
+      left: 5%;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      color: white;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+      z-index: 3;
+    }
     ul {
       position: absolute;
-      top: 17%;
+      top: 30%;
       left: 50%;
       transform: translate(-50%, 50%);
       padding: 0;
@@ -89,6 +101,11 @@ section#portfolio h2 {
   a:active span,
   a:focus span {
     bottom: 100%;
+    opacity: 1;
+  }
+  a:hover p,
+  a:active p,
+  a:focus p {
     opacity: 1;
   }
   a:hover ul,
