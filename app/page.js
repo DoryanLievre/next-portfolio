@@ -15,9 +15,7 @@ export default function Home() {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) =>
       entries.forEach((entry) => {
-          if(entry.isIntersecting) {
-              entry.target.className += ' is-visible';
-          }
+        entry.target.classList.toggle('is-visible', entry.isIntersecting)
       }),
     )
     observer.observe(document.querySelector('div.skills-container'))
