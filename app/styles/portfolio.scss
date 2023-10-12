@@ -1,5 +1,5 @@
 section#portfolio {
-  background-color: $gray;
+  background-color: $darker-bg;
   padding-bottom: 100px;
 }
 
@@ -60,7 +60,7 @@ section#portfolio h2 {
       margin-bottom: 10px;
 
       &::before {
-        content: "◆";
+        content: '◆';
         position: absolute;
         left: 0;
         color: $gold;
