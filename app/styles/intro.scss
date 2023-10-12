@@ -1,17 +1,18 @@
-section#intro{
+section#intro {
   max-width: 70%;
-  margin: 0 auto;
+  min-height: 100vh;
+  margin: 25vh auto 0;
   display: flex;
-  align-items: center;
-    justify-content: space-between;
+  justify-content: space-between;
 }
-section#intro p{
-  color: white;
-  font-size: 1.8rem;
+section#intro p {
+  font-size: calc(1rem + 1vw);
   font-weight: bold;
-  line-height: 2.6rem;
+  line-height: 1.5;
   opacity: 0;
-  transition: opacity .3s linear, top .3s linear;
+  transition:
+    opacity 0.3s linear,
+    top 0.3s linear;
   position: relative;
   top: -50px;
 }
@@ -20,7 +21,7 @@ section#intro.visible p {
   top: 0px;
 }
 
-section#intro a {
+section#intro .contact-link {
   border: 3px solid $gold;
   border-radius: 7px;
   color: $gold;
@@ -29,24 +30,26 @@ section#intro a {
   display: inline-block;
   margin-top: 20px;
   opacity: 0;
-  transition: opacity .3s linear, transform .3s ease-in-out; /* Ajoutez une transition à la transformation */
+  transform: translateY(50px);
+  transition:
+    opacity 0.3s linear,
+    transform 0.3s ease-in-out;
   position: relative;
-  bottom: -50px;
 }
 
-section#intro.visible a {
+section#intro.visible .contact-link {
   opacity: 1;
-  bottom: 0px;
+  transform: translateY(0px);
 }
 
-section#intro a:hover {
+section#intro .contact-link:hover {
   background-color: $gold;
-  color: #34353A;
+  color: #34353a;
   transform: translateY(-5px);
 }
-section#intro span{
+section#intro span {
   color: $gold;
-  font-size: 3.2rem;
+  font-size: calc(1.8rem + 2vw);
   font-family: 'Young Serif', serif;
   font-weight: 600;
 }
@@ -58,18 +61,120 @@ section#intro img {
   margin-right: 20px;
   object-fit: cover;
   opacity: 0;
-  transition: opacity .5s linear, transform .5s ease-in-out;
+  transition:
+    opacity 0.5s linear,
+    transform 0.5s ease-in-out;
   transform: perspective(1000px) rotateY(0deg);
 }
 
 section#intro img:hover {
+  cursor: pointer;
   opacity: 1;
-  transform: perspective(1000px) rotateY(10deg);
-  transition: transform .5s ease-in-out;
+  transform: perspective(1000px) rotateY(20deg);
+  transition: transform 0.5s ease-in-out;
 }
 
-section#intro.visible img {
+section#intro.visible img,
+section#intro.visible .bubble {
   opacity: 1;
 }
 
+section#intro .images-container {
+  position: relative;
+}
+section#intro .bubble {
+  p {
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+  max-width: 300px;
+  position: absolute;
+  top: 29%;
+  left: 83%;
+  transform: translateX(0);
+  background: $gold;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition:
+    opacity 0.5s linear,
+    transform 0.5s ease-in-out;
+}
 
+section#intro .bubble::before {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  margin-left: -80px;
+  border-style: solid;
+  border-width: 20px 10px 0;
+  border-color: $gold transparent transparent transparent;
+}
+
+section#intro.visible .bubble {
+  transform: translateX(-50%);
+  opacity: 1;
+}
+
+section#intro .scrolling-mouse{
+  width: 3.2em;
+  height: 5em;
+  border: .3em solid $gold;
+  border-radius: 2em;
+  position: absolute;
+  left: 50%;
+  bottom: 14%;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+section#intro .scrolling-mouse .wheel {
+  width: .8em;
+  height: 1em;
+  background-color: $gold;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(0%, -50%);
+  border-radius: .6em;
+  animation: wheel 1.4s ease-in-out infinite;
+}
+
+@keyframes wheel {
+  0% {
+    transform: translate(-50%,0%) ;
+    opacity: 0;
+  }
+  20%,70% {
+    opacity: 1;
+  }
+  90%,100% {
+    transform: translate(-50%, 150%);
+  }
+}
+@media (max-width: 768px) {
+  section#intro {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px auto;
+    justify-content: normal;
+  }
+  section#intro .image-container {
+    margin-top: 30px;
+  }
+  section#intro .bubble{
+    top: 44%;
+  }
+  section#intro .bubble::before {
+    display: none;
+  }
+  section#intro .scrolling-mouse {
+    display: none;
+  }
+  section#intro .scrolling-mouse {
+  }
+}
