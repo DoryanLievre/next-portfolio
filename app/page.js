@@ -8,6 +8,7 @@ import Portfolio from '@/components/Portfolio'
 import Experience from '@/components/Experience'
 import Study from '@/components/Study'
 import Contact from '@/components/Contact'
+import ScrollToTop from '@/components/ScrollToTop'
 import Footer from '@/components/Footer'
 import { useEffect } from 'react'
 
@@ -33,6 +34,7 @@ export default function Home() {
       <Experience />
       <Study />
       <Contact />
+        <ScrollToTop />
       <Footer />
     </main>
   )

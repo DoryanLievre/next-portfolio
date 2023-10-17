@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <header>
+    <header id='header'>
       <img className="headerLogo" src="images/personal_logo.svg" alt="logo" />
       <nav>
         <a href="#about">About</a>
