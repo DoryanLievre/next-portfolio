@@ -35,24 +35,23 @@ header div.social a svg:hover {
 }
 
 @media (max-width: 768px) {
-  /* Styles spécifiques à la version mobile */
   header {
-    max-width: 90%; // Par exemple, réduire la largeur pour s'adapter aux écrans mobiles
-    padding: 10px 0; // Ajuster le padding pour l'espace mobile
+    max-width: 90%;
+    padding: 10px 0;
   }
 
   .headerLogo {
-    width: 60px; // Ajuster la taille du logo pour les écrans mobiles
+    width: 60px;
     height: 60px;
   }
 
   header nav {
-    font-size: 1rem; // Ajuster la taille de la police pour les écrans mobiles
+    font-size: 1rem;
   }
 
   header div.social a svg {
-    height: 20px; // Ajuster la taille des icônes sociales pour les écrans mobiles
+    height: 20px;
     width: 20px;
-    margin: 0 5px; // Ajuster la marge pour les écrans mobiles
+    margin: 0 5px;
   }
 }
